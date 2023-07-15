@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Les 25 Huiswerk</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            
+            $(document).ready(function() {
+                $("#toon").click(function(){
+                    $("img").show();
+                });
+                $("#verberg").click(function() {
+                    $("img").hide();
+                });
+            });
+            $( function() {
+              $( "#datepicker" ).datepicker();
+            } );
+        </script>
+    </head>
+    <body>
+           
+        <p>Date: <input type="text" id="datepicker"></p>
+
+        Met deze buttons toont of verbergt u de afbeelding.
+        <button id="toon">Toon</button>
+        <button id="verberg">Verberg</button><br><br>
+        <img id='afbeelding' src="wereldkaart.jpg" alt="wereldkaart met kleuren">
+           
+    </body>
+</html>
